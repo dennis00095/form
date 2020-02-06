@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="style.css">
+<div class="container">
+  <head class="heading">
+    <h1 id="title" class="text-center">Senseid Entertainment survey form</h1>
+    <p id="description" class="text-center">
+      <marquee>Help us provide the entertainment you desire</marquee>
+    </p>
+  </head>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(!important)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="60"
+        class="form-control"
+        placeholder="Enter your age"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <p>What type of movies do you like?</p>
+      <select id="dropdown" name="movie" class="form-control" required>
+        <option disabled selected value>Your type of movie</option>
+        <option value="Contemporary">Contemporary</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Investigative">Investigative</option>
+        <option value="Educative">Educative</option>
+        <option value="Action">Action</option>
+        <option value="ActionComedy">ActionComedy</option>
+        <option value="Documentary">Documentary</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How do you rate Senseid Entertainment?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="top notch"
+          type="radio"
+          class="input-radio"
+          checked
+        />Excellent</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="average"
+          type="radio"
+          class="input-radio"
+        />Good enough</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="need for improvement"
+          type="radio"
+          class="input-radio"
+        />Not good enough</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="really need to improve"
+          type="radio"
+          class="input-radio"
+        />Poor</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Tell us who is your favorite customer care!
+      </p>
+      <select id="bestcare" name="customercare" class="form-control" required>
+        <option disabled selected value>Choose your favorite customercare</option>
+        <option value="firstName">Alex</option>
+        <option value="firstName">Claire</option>
+        <option value="firstName">Ramona</option>
+        <option value="firstName">Sean</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite Entertainment at Senseid?
+      </p>
+
+      <label><input name="favorite" value="Fifa Gaming" type="checkbox" class="input-checkbox"/>Fifa Gaming</label>
+
+      <label><input name="favorite" value="Mortal combat" type="checkbox" class="input-checkbox"/>Mortal comat</label>
+
+      <label><input name="favorite" value="G.T.A" type="checkbox" class="input-checkbox"/>G.T.A</label>
+
+      <label><input name="favorite" value="movies" type="checkbox" class="input-checkbox"/> Movies</label>
+
+      <label><input name="favorite" value="music" type="checkbox" class="input-checkbox"/> music</label>
+
+      
+    </div>
+
+    <div class="form-group">
+      <p>Add comments or complaints</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment or complaints here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
